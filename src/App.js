@@ -1,8 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import DefaultLayout from './layout/DefaultLayout'
-import HomePage from './pages/HomePage/HomePage'
-import Profile from './pages/Profile/Profile'
+import { HomePage, Profile } from './pages'
 
 const App = () => {
     return (
