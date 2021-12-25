@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import DefaultLayout from './layout/DefaultLayout'
-import { HomePage, Profile } from './pages'
+import { HomePage, NotFound, Profile } from './pages'
 
 const App = () => {
     return (
@@ -10,6 +10,7 @@ const App = () => {
                 <Route element={<DefaultLayout />}>
                     <Route index element={<HomePage />} />
                     <Route path='profile' element={<Profile />} />
+                    <Route path='*' element={<NotFound />} />
                 </Route>
             </Routes>
         </>
