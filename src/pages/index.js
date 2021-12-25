@@ -1,5 +1,6 @@
 import HomePage from './HomePage/HomePage'
-import Profile from './Profile/Profile'
+import ProfilePage from './ProfilePage/ProfilePage'
 import NotFound from './NotFound/NotFound'
+import LoginPage from './LoginPage/LoginPage'
 
-export { HomePage, Profile, NotFound }
+export { HomePage, ProfilePage, NotFound, LoginPage }
