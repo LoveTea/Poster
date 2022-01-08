@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 const Header = () => {
     const dispatch = useDispatch()
-    const { isAuth } = useSelector((state) => state.auth)
+    const { isAuth, user } = useSelector((state) => state.auth)
 
     const logoutHandler = () => {
         dispatch(logout())
@@ -23,7 +23,7 @@ const Header = () => {
                     <Nav className='ms-auto'>
                         {isAuth && (
                             <NavDropdown
-                                title='Профиль'
+                                title={user.email}
                                 id='basic-nav-dropdown'
                             >
                                 <NavDropdown.Item as={Link} to='/profile'>
